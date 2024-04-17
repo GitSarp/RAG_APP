@@ -2,13 +2,13 @@
 RAG applications
 
 - ** langchain建议python版本3.10 **
-- 
+- pip依赖参考项目requirements.txt自行安装
 参考资料：https://datawhalechina.github.io/llm-universe/#/C3/4.%E6%90%AD%E5%BB%BA%E5%B9%B6%E4%BD%BF%E7%94%A8%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93
 
 
 ## knowledge 知识库
 - sqlite3版本需要>3.35,参考https://docs.trychroma.com/troubleshooting#sqlite
-- 需要下载m3e embedding模型到m3e-base目录，https://huggingface.co/moka-ai/m3e-base（或者使用智谱embedding api,代码中解除注释）
+- 默认使用m3e-base做embedding（需要下载m3e模型到m3e-base目录，https://huggingface.co/moka-ai/m3e-base），也可使用智谱embedding api,代码中解除注释即可
 - 使用智谱api,需要拷贝.env.example到.env,并输入key
 - docs目录下文件用于构建知识库
 
